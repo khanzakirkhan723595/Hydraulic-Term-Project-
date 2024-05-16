@@ -11,8 +11,8 @@ f2= lambda x: -1*x[0] + x[1] + 0*x[2] + 0*x[3] + 0*x[4] + 0*x[5] + x[6] + 0
 f3= lambda x: 0*x[0] + -1*x[1] + x[2] + 0*x[3] + 0*x[4] + 0*x[5] + 0*x[6] + 0.5
 f4= lambda x: 0*x[0] + 0*x[1] + -1*x[2] + -1*x[3] + 0*x[4] + 0*x[5] + 0*x[6] + 1
 f5= lambda x: 0*x[0] + 0*x[1] + 0*x[2] + x[3] + -1*x[4] + 0*x[5] + -1*x[6] + 1
-f6= lambda x: 0*x[0] + 0*x[1] + 0*x[2] + 0*x[3] + x[4] + -1*x[5] + 0*x[6] + 0
 #Equation of the loops
+f6= lambda x: 0*(x[0]**2) + 130703.32*(x[1]**2) + 43567.77*(x[2]**2) + -130703.32*(x[3]**2) + 0*(x[4]**2) + 0*(x[5]**2) - 330842.79*(x[6]**2) + 0
 f7= lambda x: 10163.49*(x[0]**2) + 0*(x[1]**2) + 0*(x[2]**2) + 0*(x[3]**2) + 130703.32*(x[4]**2) - 10338.84*(x[5]**2) + 330842.79*(x[6]**2) + 0
 #finding the jacobian of above functions
 jac_f1=jacobian(f1)
@@ -37,7 +37,7 @@ N=7
 #dtype=float).reshape(N,1) initializes a 7x1 Numpy array x_0 with initial values of 1 in each element.
 #The dtype=float argument ensures that the values are of float type.
 #method reshapes the 1D array into a 7x1 column vector
-x_0 =np.array([1,1,1,1,1,1,1],dtype=float).reshape(N,1)
+x_0 =np.array([6,1,4,7,1,1,1],dtype=float).reshape(N,1)
 
 #performing Newton_Raphson for calculating the Q values in each pipe
 while np.any(abs(error)>tol) and i<maxiter:
