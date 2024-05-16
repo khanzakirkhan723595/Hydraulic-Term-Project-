@@ -72,7 +72,7 @@ print("Q(BE)",x_new[6],"m3/s")
 l=np.array([1500,1500,1200,1500,1500,1200,1200])
 d=np.array([0.8,0.6,0.7,0.7,0.7,0.7,0.7])
 elv=np.array([30,25,20,20,22,25])
-f=0.015
+f=0.2
 head_init=15
 
 #head calculation
