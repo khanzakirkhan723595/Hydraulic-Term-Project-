@@ -37,7 +37,7 @@ N=7
 #dtype=float).reshape(N,1) initializes a 7x1 Numpy array x_0 with initial values of 1 in each element.
 #The dtype=float argument ensures that the values are of float type.
 #method reshapes the 1D array into a 7x1 column vector
-x_0 =np.array([6,1,4,7,1,1,1],dtype=float).reshape(N,1)
+x_0 =np.array([1,1,1,1,1,1,1],dtype=float).reshape(N,1)
 
 #performing Newton_Raphson for calculating the Q values in each pipe
 while np.any(abs(error)>tol) and i<maxiter:
