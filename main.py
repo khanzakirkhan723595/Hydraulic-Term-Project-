@@ -69,8 +69,8 @@ print("Q(FA)",x_new[5],"m3/s")
 print("Q(BE)",x_new[6],"m3/s")
 
 #making array for length, diameter & elvation 
-l=np.array([1500,1500,1200,1500,1500,1200,1200])
-d=np.array([0.8,0.6,0.7,0.7,0.7,0.7,0.7])
+l=np.array([600,600,200,600,600,200,200])
+d=np.array([0.25,0.15,0.1,0.15,0.15,0.2,0.1])
 elv=np.array([30,25,20,20,22,25])
 f=0.2
 head_init=15
